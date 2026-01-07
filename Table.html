@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Informasi Jam Mengajar - GuruKu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background: #f3f4f6;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 240px;
+      background: linear-gradient(180deg, #667eea, #764ba2);
+      color: #fff;
+      padding: 25px 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 10px 12px;
+      border-radius: 8px;
+      transition: .3s;
+    }
+
+    .sidebar ul li a:hover {
+      background: rgba(255,255,255,.2);
+      padding-left: 18px;
+    }
+
+    /* CONTENT */
+    .container {
+      flex: 1;
+      padding: 40px;
+      animation: fadeIn .5s ease;
+    }
+
+    .container h1 {
+      font-size: 32px;
+      color: #4b0082;
+      margin-bottom: 30px;
+    }
+
+    /* CARD GRID */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.12);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0,0,0,.18);
+    }
+
+    .card h3 {
+      color: #4b0082;
+      margin-bottom: 12px;
+    }
+
+    .info {
+      margin: 8px 0;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4338ca;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-top: 6px;
+    }
+
+    .price {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #16a34a;
+    }
+
+    .btn {
+      margin-top: 18px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      opacity: .9;
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="sidebar">
+  <h2>GuruKu</h2>
+  <ul>
+    <li><a href="Guru.html">Beranda</a></li>
+    <li><a href="Halaman2.html">Daftar Guru</a></li>
+    <li><a href="Table.html">Informasi Jam Mengajar</a></li>
+    <li><a href="FormSewaGuru.php">Daftar Les Privat</a></li>
+    <li><a href="Pesanan.php">Lihat Pesanan</a></li>
+    <li><a href="About Us.html">Tentang Kami</a></li>
+    <li><a href="CS.html">Customer Service</a></li>
+    <li><a href="Galeri.html">galeri</a></li>
+    <li><a href="testimoni.html">testimoni</a></li>
+    <li><a href="LoginGuru.php">Halaman Guru</a></li>
+  </ul>
+</nav>
+
+  <div class="container">
+    <h1>Informasi Jam Mengajar</h1>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>Andi Pratama</h3>
+        <div class="info">Jam Mengajar: 15.00 - 20.00 WIB</div>
+        <span class="badge">Matematika</span>
+        <div class="price">Rp75.000 / jam</div>
+        <a href="FormSewaGuru.php?guru=Andi Pratama">
+  <button class="btn">Pesan Guru</button>
+</a>
+
+      </div>
+
+      <div class="card">
+        <h3>Syaifuddin</h3>
+        <div class="info">Jam Mengajar: 15.00 - 20.00 WIB</div>
+        <span class="badge">Matematika & Fisika</span>
+        <div class="price">Rp80.000 / jam</div>
+        <a href="FormSewaGuru.php?guru=Syaifuddin">
+  <button class="btn">Pesan Guru</button>
+</a>
+
+      </div>
+
+      <div class="card">
+        <h3>Wanda Aulia</h3>
+        <div class="info">Jam Mengajar: 15.00 - 20.00 WIB</div>
+        <span class="badge">Bahasa Inggris</span>
+        <div class="price">Rp60.000 / jam</div>
+        <a href="FormSewaGuru.php?guru=Wanda Aulia">
+  <button class="btn">Pesan Guru</button>
+</a>
+
+      </div>
+
+      <div class="card">
+        <h3>Narno</h3>
+        <div class="info">Jam Mengajar: 15.00 - 20.00 WIB</div>
+        <span class="badge">Penjaskes</span>
+        <div class="price">Rp60.000 / jam</div>
+        <a href="FormSewaGuru.php?guru=Narno">
+  <button class="btn">Pesan Guru</button>
+</a>
+
+      </div>
+
+      <div class="card">
+        <h3>Aulia Putri</h3>
+        <div class="info">Jam Mengajar: 15.00 - 20.00 WIB</div>
+        <span class="badge">Keagamaan</span>
+        <div class="price">Rp70.000 / jam</div>
+        <a href="FormSewaGuru.php?guru=Aulia Putri">
+  <button class="btn">Pesan Guru</button>
+</a>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

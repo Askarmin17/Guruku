@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>GuruKu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* RESET */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 240px;
+      background: linear-gradient(180deg, #667eea, #764ba2);
+      color: #fff;
+      padding: 25px 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: .3s;
+    }
+
+    .sidebar ul li a:hover {
+      background: rgba(255,255,255,.2);
+      padding-left: 18px;
+    }
+
+    /* CONTAINER */
+    .container {
+      flex: 1;
+      padding: 40px;
+      animation: fadeIn .5s ease;
+    }
+
+    /* BANNER */
+    .banner {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0,0,0,.15);
+      margin-bottom: 25px;
+    }
+
+    /* JUDUL */
+    .container h1 {
+      font-size: 36px;
+      color: #4b0082;
+      margin-bottom: 15px;
+    }
+
+    /* DESKRIPSI */
+    .container p {
+      background: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      line-height: 1.8;
+      font-size: 15px;
+      color: #444;
+      box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .container h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="sidebar">
+  <h2>GuruKu</h2>
+  <ul>
+   <li><a href="Guru.html">Beranda</a></li>
+    <li><a href="Halaman2.html">Daftar Guru</a></li>
+    <li><a href="Table.html">Informasi Jam Mengajar</a></li>
+    <li><a href="FormSewaGuru.php">Daftar Les Privat</a></li>
+    <li><a href="Pesanan.php">Lihat Pesanan</a></li>
+    <li><a href="About Us.html">Tentang Kami</a></li>
+    <li><a href="CS.html">Customer Service</a></li>
+    <li><a href="Galeri.html">galeri</a></li>
+    <li><a href="testimoni.html">testimoni</a></li>
+    <li><a href="LoginGuru.php">Halaman Guru</a></li>
+  </ul>
+</nav>
+
+  <div class="container">
+    <img src="Les Privat.png" alt="Les Privat" class="banner">
+
+    <h1>GuruKu</h1>
+
+    <p>
+      GuruKu.id adalah sebuah website yang menyediakan layanan jasa guru untuk
+      membantu siswa belajar dengan mudah, fleksibel, dan sesuai kebutuhan.
+      Melalui website ini, siswa dapat mencari guru privat berdasarkan mata
+      pelajaran, lokasi, dan metode pembelajaran yang diinginkan.<br><br>
+
+      GuruKu.id memiliki berbagai kategori guru, mulai dari tingkat SD, SMP,
+      SMA, hingga umum. Setiap guru memiliki profil yang berisi pengalaman,
+      bidang keahlian, dan tarif per jam, dilengkapi sistem rating dan ulasan.<br><br>
+
+      Website ini juga menyediakan fitur pemesanan jadwal secara online.
+      Pengguna cukup memilih guru, menentukan waktu belajar, dan melakukan
+      konfirmasi. Semua jadwal tercatat otomatis.<br><br>
+
+      GuruKu.id tidak hanya membantu siswa, tetapi juga memberi kesempatan
+      kepada guru untuk menawarkan jasa mereka secara profesional dan mudah
+      ditemukan oleh calon murid.
+    </p>
+  </div>
+
+</body>
+</html>

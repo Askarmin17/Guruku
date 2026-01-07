@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Guru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background: #f3f4f6;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 240px;
+      background: linear-gradient(180deg, #667eea, #764ba2);
+      color: #fff;
+      padding: 25px 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 10px 12px;
+      border-radius: 8px;
+      transition: .3s;
+      font-size: 15px;
+    }
+
+    .sidebar ul li a:hover {
+      background: rgba(255,255,255,.2);
+      padding-left: 18px;
+    }
+
+    /* CONTAINER */
+    .container {
+      flex: 1;
+      padding: 40px;
+      animation: fadeIn .5s ease;
+    }
+
+    .container h1 {
+      font-size: 32px;
+      color: #4b0082;
+      margin-bottom: 25px;
+    }
+
+    /* GRID CARD */
+    .guru-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .guru-card {
+      background: #fff;
+      padding: 22px;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.12);
+      transition: .3s;
+    }
+
+    .guru-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0,0,0,.18);
+    }
+
+    .guru-card h3 {
+      color: #5a3ec8;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .guru-card ul {
+      list-style: none;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .guru-card ul li {
+      margin-bottom: 6px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4338ca;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="sidebar">
+  <h2>GuruKu</h2>
+  <ul>
+  <li><a href="Guru.html">Beranda</a></li>
+    <li><a href="Halaman2.html">Daftar Guru</a></li>
+    <li><a href="Table.html">Informasi Jam Mengajar</a></li>
+    <li><a href="FormSewaGuru.php">Daftar Les Privat</a></li>
+    <li><a href="Pesanan.php">Lihat Pesanan</a></li>
+    <li><a href="About Us.html">Tentang Kami</a></li>
+    <li><a href="CS.html">Customer Service</a></li>
+    <li><a href="Galeri.html">galeri</a></li>
+    <li><a href="testimoni.html">testimoni</a></li>
+    <li><a href="LoginGuru.php">Halaman Guru</a></li>
+  </ul>
+</nav>
+  <div class="container">
+    <h1>Daftar Guru</h1>
+
+    <div class="guru-grid">
+
+      <div class="guru-card">
+        <span class="badge">Matematika</span>
+        <h3>Andi Pratama</h3>
+        <ul>
+          <li><b>Pengalaman:</b> 5 tahun</li>
+          <li><b>Tempat:</b> SMA Negeri & Bimbel Online</li>
+          <li>Sabar dan mampu membuat pelajaran eksakta mudah dipahami.</li>
+        </ul>
+      </div>
+
+      <div class="guru-card">
+        <span class="badge">Fisika & Matematika</span>
+        <h3>Syaifuddin</h3>
+        <ul>
+          <li><b>Pengalaman:</b> 4 tahun</li>
+          <li><b>Tempat:</b> SMA 1 Kota Blitar</li>
+          <li>Lebih suka praktek langsung daripada teori.</li>
+        </ul>
+      </div>
+
+      <div class="guru-card">
+        <span class="badge">Bahasa Inggris</span>
+        <h3>Wanda Aulia</h3>
+        <ul>
+          <li><b>Pengalaman:</b> 8 tahun</li>
+          <li><b>Tempat:</b> Kampung Inggris Pare</li>
+          <li>Metode fleksibel sesuai karakter siswa.</li>
+        </ul>
+      </div>
+
+      <div class="guru-card">
+        <span class="badge">Penjaskes</span>
+        <h3>Narno</h3>
+        <ul>
+          <li><b>Pengalaman:</b> 4 tahun</li>
+          <li><b>Tempat:</b> SMA Katolik</li>
+          <li>Ahli kebugaran & pelatih voli sekolah.</li>
+        </ul>
+      </div>
+
+      <div class="guru-card">
+        <span class="badge">Keagamaan</span>
+        <h3>Aulia Putri</h3>
+        <ul>
+          <li><b>Pengalaman:</b> 9 tahun</li>
+          <li><b>Tempat:</b> SMA Negeri & Pesantren</li>
+          <li>Hafal 30 Juz & mengajar disertai tafsir.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

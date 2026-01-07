@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kelompok 4 - GuruKu</title>
+
+  <style>
+    /* ===== RESET ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f3f4f6;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 240px;
+      background: linear-gradient(180deg, #667eea, #764ba2);
+      color: #fff;
+      padding: 25px 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      display: block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      background: rgba(255,255,255,0.2);
+      padding-left: 20px;
+    }
+
+    /* ===== CONTAINER ===== */
+    .container {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .container h1 {
+      font-size: 36px;
+      color: #4b0082;
+      margin-bottom: 25px;
+    }
+
+    /* ===== CARD ===== */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,.2);
+      transition: .35s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0,0,0,.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 22px;
+    }
+
+    .card-body h3 {
+      color: #4b0082;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card-body p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .sosmed {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #667eea;
+      font-weight: 500;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .container h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+<nav class="sidebar">
+  <h2>GuruKu</h2>
+  <ul>
+  <li><a href="Guru.html">Beranda</a></li>
+    <li><a href="Halaman2.html">Daftar Guru</a></li>
+    <li><a href="Table.html">Informasi Jam Mengajar</a></li>
+    <li><a href="FormSewaGuru.php">Daftar Les Privat</a></li>
+    <li><a href="Pesanan.php">Lihat Pesanan</a></li>
+    <li><a href="About Us.html">Tentang Kami</a></li>
+    <li><a href="CS.html">Customer Service</a></li>
+    <li><a href="Galeri.html">galeri</a></li>
+    <li><a href="testimoni.html">testimoni</a></li>
+    <li><a href="LoginGuru.php">Halaman Guru</a></li>
+  </ul>
+</nav>
+
+  <!-- CONTENT -->
+  <div class="container">
+    <h1>Kelompok 4</h1>
+
+    <div class="card-container">
+
+      <div class="card">
+        <img src="dian.jpeg">
+        <div class="card-body">
+          <h3>Muhammad Ardian Juniarto</h3>
+          <p>Dari Kota Blitar, Jawa Timur.</p>
+          <p>Sepak Bola</p>
+          <div class="sosmed">Instagram: @MhmdArdhian</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ariel.jpeg">
+        <div class="card-body">
+          <h3>M. Ariel Permadani</h3>
+          <p>Dari Kota Blitar, Jawa Timur.</p>
+          <p>Edit Video</p>
+          <div class="sosmed">
+            Instagram: @rieldayoo<br>
+            TikTok: @Arielpermadani
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="zaenal.jpeg">
+        <div class="card-body">
+          <h3>M. Zaenal Arifin</h3>
+          <p>Dari Kota Blitar, Jawa Timur.</p>
+          <p>Memancing</p>
+          <div class="sosmed">
+            Instagram: @zaenal<br>
+            TikTok: @Zaenal
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="zahril.jpeg">
+        <div class="card-body">
+          <h3>Mohammad Zahril Ilham</h3>
+          <p>Dari Kota Blitar, Jawa Timur.</p>
+          <p>Memasak</p>
+          <div class="sosmed">Instagram: @bokleh</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="azkarmin.jpeg">
+        <div class="card-body">
+          <h3>Muhammad Azkarmin Muhusini</h3>
+          <p>Dari Kota Blitar, Jawa Timur.</p>
+          <p>Bersosial</p>
+          <div class="sosmed">Instagram: @azkarmin.mhsn17</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

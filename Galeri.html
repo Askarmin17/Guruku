@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri Kegiatan - GuruKu</title>
+
+<style>
+/* RESET */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:'Poppins',sans-serif;
+}
+
+/* BODY */
+body{
+  min-height:100vh;
+  display:flex;
+  background:#f3f4f6;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+  width:240px;
+  background:linear-gradient(180deg,#667eea,#764ba2);
+  color:#fff;
+  padding:25px 20px;
+}
+
+.sidebar h2{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:24px;
+  letter-spacing:1px;
+}
+
+.sidebar ul{
+  list-style:none;
+}
+
+.sidebar ul li{
+  margin:15px 0;
+}
+
+.sidebar ul li a{
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:500;
+  display:block;
+  padding:8px 12px;
+  border-radius:8px;
+  transition:.3s;
+}
+
+.sidebar ul li a:hover{
+  background:rgba(255,255,255,.2);
+  padding-left:18px;
+}
+
+/* ===== CONTENT ===== */
+.content{
+  flex:1;
+  padding:40px 20px;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+/* JUDUL */
+h1{
+  text-align:center;
+  color:#fff;
+  margin-bottom:40px;
+  font-size:36px;
+  letter-spacing:1px;
+}
+
+/* GALERI GRID */
+.galeri-container{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.galeri-item{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
+  transition:.35s ease;
+}
+
+.galeri-item:hover{
+  transform:translateY(-8px);
+  box-shadow:0 25px 50px rgba(0,0,0,.35);
+}
+
+.galeri-item img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  display:block;
+}
+
+.galeri-item p{
+  padding:18px;
+  font-size:15px;
+  line-height:1.6;
+  color:#444;
+  text-align:center;
+}
+
+/* BUTTON */
+.btn{
+  display:block;
+  margin:50px auto 0;
+  width:200px;
+  padding:14px;
+  text-align:center;
+  border-radius:14px;
+  text-decoration:none;
+  color:#fff;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  font-weight:600;
+  letter-spacing:.5px;
+  transition:.3s;
+  box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .sidebar{
+    display:none;
+  }
+  h1{
+    font-size:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="sidebar">
+  <h2>GuruKu</h2>
+  <ul>
+   <li><a href="Guru.html">Beranda</a></li>
+    <li><a href="Halaman2.html">Daftar Guru</a></li>
+    <li><a href="Table.html">Informasi Jam Mengajar</a></li>
+    <li><a href="FormSewaGuru.php">Daftar Les Privat</a></li>
+    <li><a href="Pesanan.php">Lihat Pesanan</a></li>
+    <li><a href="About Us.html">Tentang Kami</a></li>
+    <li><a href="CS.html">Customer Service</a></li>
+    <li><a href="Galeri.html">galeri</a></li>
+    <li><a href="testimoni.html">testimoni</a></li>
+    <li><a href="LoginGuru.php">Halaman Guru</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+
+<h1>Galeri Kegiatan</h1>
+
+<div class="galeri-container">
+
+  <div class="galeri-item">
+    <img src="mtk.jpg" alt="Kegiatan Belajar Matematika">
+    <p>Sesi belajar Matematika bersama Pak Budi</p>
+  </div>
+
+  <div class="galeri-item">
+    <img src="b.ing.png" alt="Kegiatan Bahasa Inggris">
+    <p>Latihan percakapan Bahasa Inggris dengan Bu Sinta</p>
+  </div>
+
+  <div class="galeri-item">
+    <img src="kimia.jpg" alt="Kegiatan Laboratorium">
+    <p>Eksperimen Fisika interaktif bersama siswa SMA</p>
+  </div>
+
+</div>
+
+<a href="Guru.html" class="btn">Kembali ke Beranda</a>
+
+</div>
+
+</body>
+</html>
