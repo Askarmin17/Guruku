@@ -21,15 +21,20 @@ APLIKASI PENYEWAAN GURU LES PRIVAT "GURUKU"
 
    Atau bisa mencoba fitur "Daftar Akun Baru" pada menu Register.
 
-4. LINK VIDIO PERSENTASI
+4. AKUN ADMIN
+   Anda dapat login menggunakan akun berikut:
+   - Username : admin
+   - Password : 123
+
+5. LINK VIDIO PERSENTASI
    Silakan akses Vidio presentasi kami dari kelompok 04 di sini:
    https://youtu.be/f4a6qdtrvq8?si=jH-bK9hsbVx9IKJx
 
-5. LINK GITHUB / DOKUMEN WEBSITE
+6. LINK GITHUB / DOKUMEN WEBSITE
    Silakan akses Dokumen Website kami yang lengkap di sini:
    https://github.com/Askarmin17/Guruku.git
 
-6. LINK GOGLE DRIVE 
+7. LINK GOGLE DRIVE 
    Silakan akses laporan praktek kami di sini:
    https://drive.google.com/drive/folders/1SJ-MqMlBIaIl7rQB-mgV_MHXJDKgmXHS
 
