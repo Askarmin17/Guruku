@@ -18,7 +18,7 @@ if (isset($_POST['login'])) {
         $_SESSION['id_admin'] = $data['id_admin'];
         $_SESSION['username'] = $data['username'];
 
-        header("Location:admin.php");
+        header("Location:Admin.php");
         exit;
     } else {
         $error = "Username atau Password salah!";

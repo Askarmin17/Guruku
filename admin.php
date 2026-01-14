@@ -101,10 +101,10 @@ body {
 <!-- SIDEBAR -->
 <div class="sidebar">
     <h2>GuruKu Admin</h2>
- <a href="admin.php">🏠 Dashboard</a>
-    <a href="admin_guru.php" class="active">👩‍🏫 Data Guru</a>
-    <a href="admin_user.php">📋 Data Pesanan</a>
-      <a href="logout.php" onclick="return confirm('Yakin ingin logout?')">
+ <a href="Admin.php">🏠 Dashboard</a>
+    <a href="AdminGuru.php" class="active">👩‍🏫 Data Guru</a>
+    <a href="AdminUser.php">📋 Data Pesanan</a>
+      <a href="Logout.php" onclick="return confirm('Yakin ingin logout?')">
         Logout
       </a>
 </div>

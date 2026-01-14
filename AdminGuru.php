@@ -10,14 +10,14 @@ if (isset($_POST['tambah'])) {
     $harga  = $_POST['harga_perjam'];
 
     mysqli_query($koneksi, "INSERT INTO data_guru VALUES (NULL,'$nama','$mapel','$harga')");
-    header("Location: admin_guru.php");
+    header("Location: AdminGuru.php");
 }
 
 // hapus data
 if (isset($_GET['hapus'])) {
     $id = $_GET['hapus'];
     mysqli_query($koneksi, "DELETE FROM data_guru WHERE id_guru='$id'");
-    header("Location: admin_guru.php");
+    header("Location: AdminGuru.php");
 }
 
 // ambil data edit
@@ -40,7 +40,7 @@ if (isset($_POST['update'])) {
         harga_perjam='$harga'
         WHERE id_guru='$id'");
 
-    header("Location: admin_guru.php");
+    header("Location: AdminGuru.php");
 }
 ?>
 
@@ -167,10 +167,10 @@ tr:hover{
 <!-- ===== SIDEBAR ===== -->
 <div class="sidebar">
     <h2>GuruKu Admin</h2>
-    <a href="admin.php">🏠 Dashboard</a>
-    <a href="admin_guru.php" class="active">👩‍🏫 Data Guru</a>
-    <a href="admin_user.php">📋 Data Pesanan</a>
-      <a href="logout.php" onclick="return confirm('Yakin ingin logout?')">
+    <a href="Admin.php">🏠 Dashboard</a>
+    <a href="AdminGuru.php" class="active">👩‍🏫 Data Guru</a>
+    <a href="AdminUser.php">📋 Data Pesanan</a>
+      <a href="Logout.php" onclick="return confirm('Yakin ingin logout?')">
         Logout
       </a>
 </div>

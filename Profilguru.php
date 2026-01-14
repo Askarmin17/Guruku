@@ -28,7 +28,7 @@ if (isset($_POST['simpan'])) {
          WHERE id_guru='$idGuru' OR nama_guru='$idGuru'" 
     );
 
-    header("Location: ProfilGuru.php");
+    header("Location: Profilguru.php");
     exit;
 }
 

@@ -198,8 +198,8 @@ footer {
 </head>
 <body>
     <div class="top-login">
-    <a href="loginGuru.php" class="guru-login">Guru</a>
-    <a href="login_admin.php" class="admin-login">Admin</a>
+    <a href="LoginGuru.php" class="guru-login">Guru</a>
+    <a href="LoginAdmin.php" class="admin-login">Admin</a>
 </div>
 
 

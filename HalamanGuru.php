@@ -142,7 +142,7 @@ body {
     <li><a href="HalamanGuru.php">Jadwal Les</a></li>
      <li><a href="Profilguru.php">Profil</a></li>
     <li>
-      <a href="logout.php" onclick="return confirm('Yakin ingin logout?')">
+      <a href="Logout.php" onclick="return confirm('Yakin ingin logout?')">
         Logout
       </a>
     </li>
