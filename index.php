@@ -191,7 +191,7 @@ footer {
 
     <section class="cta">
         <h2>Mulai Belajar Sekarang</h2>
-        <a href="login.php" class="btn">Pesan Les</a>
+        <a href="Login.php" class="btn">Pesan Les</a>
     </section>
 
    

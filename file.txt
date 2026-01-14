@@ -1,0 +1,40 @@
+=================================================
+TUGAS UAS PEMROGRAMAN WEB - KELOMPOK 04
+APLIKASI PENYEWAAN GURU LES PRIVAT "GURUKU"
+=================================================
+
+1. LINK DEMO ONLINE
+   Silakan akses website yang sudah di-hosting di sini:
+   http://guruku.infinityfreeapp.com
+
+2. AKUN USERS UNTUK TESTING
+   Anda dapat login menggunakan akun berikut:
+   - Username : Aku
+   - Password : 123
+
+   Atau bisa mencoba fitur "Daftar Akun Baru" pada menu Register.
+
+3. AKUN GURU UNTUK TESTING
+   Anda dapat login menggunakan akun berikut:
+   - Username : andi
+   - Password : andi123
+
+   Atau bisa mencoba fitur "Daftar Akun Baru" pada menu Register.
+
+4. LINK VIDIO PERSENTASI
+   Silakan akses Vidio presentasi kami dari kelompok 04 di sini:
+   https://youtu.be/f4a6qdtrvq8?si=jH-bK9hsbVx9IKJx
+
+5. LINK GITHUB / DOKUMEN WEBSITE
+   Silakan akses Dokumen Website kami yang lengkap di sini:
+   https://github.com/Askarmin17/Guruku.git
+
+6. LINK GOGLE DRIVE 
+   Silakan akses laporan praktek kami di sini:
+   https://drive.google.com/drive/folders/1SJ-MqMlBIaIl7rQB-mgV_MHXJDKgmXHS
+
+. CATATAN
+   - Database sudah di-import ke hosting InfinityFree.
+   - Jika website lambat (timeout), mohon direfresh karena menggunakan hosting gratis.
+
+Terima kasih.
