@@ -159,9 +159,50 @@ footer {
     font-size: 14px;
 }
 
+.top-login {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.admin-login,
+.guru-login {
+    background: rgba(255,255,255,0.9);
+    color: #007bff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.admin-login:hover {
+    background: #007bff;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.guru-login:hover {
+    background: #1e293b;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+
    </style>
 </head>
 <body>
+    <div class="top-login">
+    <a href="loginGuru.php" class="guru-login">Guru</a>
+    <a href="login_admin.php" class="admin-login">Admin</a>
+</div>
+
+
 
    
     <section class="hero">
@@ -191,7 +232,7 @@ footer {
 
     <section class="cta">
         <h2>Mulai Belajar Sekarang</h2>
-        <a href="Login.php" class="btn">Pesan Les</a>
+        <a href="login.php" class="btn">Pesan Les</a>
     </section>
 
    
