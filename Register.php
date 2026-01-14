@@ -19,7 +19,7 @@ if (isset($_POST['register'])) {
         if ($input) {
             echo "<script>
                     alert('Registrasi Berhasil! Silakan Login.');
-                    window.location='login.php';
+                    window.location='Login.php';
                   </script>";
         } else {
             $pesan = "Gagal mendaftar, coba lagi.";
@@ -71,7 +71,7 @@ if (isset($_POST['register'])) {
     </form>
 
     <div class="footer">
-        Sudah punya akun? <a href="login.php">Login di sini</a>
+        Sudah punya akun? <a href="Login.php">Login di sini</a>
     </div>
 </div>
 

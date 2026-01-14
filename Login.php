@@ -63,7 +63,7 @@ if (isset($_POST['login'])) {
     </form>
 
     <div class="footer">
-        Belum punya akun? <a href="register.php">Daftar di sini</a>
+        Belum punya akun? <a href="Register.php">Daftar di sini</a>
     </div>
 </div>
 
